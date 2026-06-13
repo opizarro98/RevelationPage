@@ -42,7 +42,27 @@
             <button class="btn-scroll">
                 Comenzar ✨
             </button>
+            <div class="music-controls">
 
+                <button id="musicBtn">
+                    ▶ Reproducir nuestra canción
+                </button>
+
+                <div class="volume-container">
+
+                    🔉
+
+                    <input type="range" id="volumeSlider" min="0" max="100" value="50">
+
+                    🔊
+
+                </div>
+
+            </div>
+
+            <audio id="bgMusic" loop>
+                <source src="assets/audio/cancion.mp3" type="audio/mpeg">
+            </audio>
         </div>
 
         <div class="scroll-indicator">
@@ -116,7 +136,7 @@
         <div class="gallery-grid">
 
             <div class="photo reveal">
-                <img src="assets/img/foto1.jpg" alt="">
+                <img src="assets/img/foto100.jpg" alt="">
             </div>
 
             <div class="photo reveal">
@@ -307,10 +327,25 @@
             <p>
                 Nuestro pequeño milagro llegará pronto ❤️
             </p>
+            <div class="eco-gallery">
 
-            <img src="assets/img/ecografia.jpg" alt="Familia">
+                <div class="eco-card">
+                    <img src="assets/img/eco1.jpeg" alt="">
+                </div>
 
-        </div>
+                <div class="eco-card">
+                    <img src="assets/img/eco3.jpeg" alt="">
+                </div>
+
+                <div class="eco-card">
+                    <img src="assets/img/eco4.jpeg" alt="">
+                </div>
+
+                <div class="eco-card">
+                    <img src="assets/img/eco2.jpeg" alt="">
+                </div>
+
+            </div>
 
     </section>
 

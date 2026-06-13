@@ -284,3 +284,53 @@ function launchConfetti() {
     }
 
 }
+
+
+
+const music =
+    document.getElementById("bgMusic");
+
+const musicBtn =
+    document.getElementById("musicBtn");
+
+let playing = false;
+
+musicBtn.addEventListener("click", () => {
+
+    if (!playing) {
+
+        music.play();
+
+        musicBtn.innerHTML =
+            "⏸ Pausar música";
+
+        playing = true;
+
+    } else {
+
+        music.pause();
+
+        musicBtn.innerHTML =
+            "▶ Reproducir nuestra canción";
+
+        playing = false;
+
+    }
+
+});
+
+
+const volumeSlider =
+    document.getElementById("volumeSlider");
+
+music.volume = 0.5;
+
+volumeSlider.addEventListener("input", () => {
+
+    music.volume =
+        volumeSlider.value / 100;
+
+});
+
+
+

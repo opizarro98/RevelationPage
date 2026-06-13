@@ -183,7 +183,60 @@ section {
 }
 
 
+.music-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 
+    margin-top: 20px;
+}
+
+#musicBtn {
+
+    background: rgba(255, 255, 255, .4);
+
+    backdrop-filter: blur(10px);
+
+    color: var(--text);
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+#musicBtn:hover {
+
+    transform: translateY(-3px);
+}
+
+.volume-container {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: rgba(255, 255, 255, .4);
+
+    padding: 10px 20px;
+
+    border-radius: 999px;
+
+    backdrop-filter: blur(10px);
+}
+
+#volumeSlider {
+
+    width: 150px;
+
+    cursor: pointer;
+}
 
 
 .scroll-indicator {
@@ -506,6 +559,50 @@ section {
 
 
 
+.eco-gallery {
+
+    max-width: 1000px;
+
+    margin: 60px auto;
+
+    columns: 2;
+
+    column-gap: 20px;
+}
+
+.eco-card {
+
+    break-inside: avoid;
+
+    margin-bottom: 20px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 10px;
+
+    box-shadow: var(--shadow);
+}
+
+.eco-card img {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: 15px;
+}
+
+
+@media(max-width:768px) {
+
+    .eco-gallery {
+
+        columns: 1;
+    }
+
+}
 
 footer {
 
